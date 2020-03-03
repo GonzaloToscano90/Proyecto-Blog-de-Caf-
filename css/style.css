@@ -73,6 +73,10 @@ img {
     .grid {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .centrar-columnas {
+        justify-content: center;
     }
     .columnas-4 {
         flex: 0 0 calc(33.3% - 1rem);
@@ -82,6 +86,12 @@ img {
     }
     .columnas-8 {
         flex: 0 0 calc(66.6% - 1rem);
+    }
+    .columnas-10 {
+        flex: 0 0 calc(83.3% - 1rem);
+    }
+    .columnas-12 {
+        flex: 0 0 100%;
     }
 }
 
@@ -278,4 +288,18 @@ img {
 
 .site-footer p span {
     font-weight: 700;
+}
+
+
+/**Contacto**/
+
+.formulario-contacto {
+    background-color: #ffffff;
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .formulario-contacto {
+        margin-top: -10rem;
+    }
 }
