@@ -109,11 +109,17 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 2rem;
+    flex: 0 0 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
     .btn {
         display: inline-block;
+        flex: 0 0 auto;
     }
 }
 
@@ -302,4 +308,30 @@ img {
     .formulario-contacto {
         margin-top: -10rem;
     }
+}
+
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1 rem;
+}
+
+.formulario-contacto textarea {
+    height: 20rem;
+}
+
+.formulario-contacto .enviar {
+    display: flex;
+    justify-content: flex-end;
 }
